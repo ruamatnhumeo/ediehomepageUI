@@ -1,0 +1,58 @@
+%contact-group {
+  border-radius: 12px;
+  > p {
+    font-size: $font-size-small;
+    font-weight: 500;
+  }
+  .input-area {
+    font-size: $font-size;
+    background-color: $color-gray-super-light;
+    > input {
+      border: none;
+    }
+    > button {
+      color: $color-gray-super-light;
+      width: 71px;
+      height: 39px;
+      background-color: $color-blue;
+    }
+  }
+}
+
+%button {
+  color: $color-gray-dark2;
+  background-color: $color-gray-super-light2;
+  border-radius: 12px;
+  width: 116px;
+  height: 42px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $color-blue;
+  }
+}
+
+%serve__group {
+  height: 42.2rem;
+  width: 34.1rem;
+
+  padding: 4.9rem 3.4rem 4.3rem;
+  border-radius: 24px;
+  transition: box-shadow 0.4s ease;
+
+  &:hover {
+    box-shadow: 5px 5px 16px 2px $color-gray-light;
+  }
+
+  @extend %button;
+
+  > h3 {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+  }
+
+  > p {
+    font-size: $font-size + 2px;
+    font-weight: $font-weight-regular;
+  }
+}
