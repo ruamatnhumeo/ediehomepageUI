@@ -1,0 +1,26 @@
+.quote {
+  padding: 10rem 0;
+  &__text {
+    font-size: $font-size-large;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-large;
+  }
+  &__author {
+    padding-top: 2.7rem;
+    display: flex;
+
+    &__info {
+      padding-left: 3rem;
+      > h3 {
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+  &__avatar {
+    > img {
+      height: 8.2rem;
+      width: 8.2rem;
+      border-radius: 12px;
+    }
+  }
+}

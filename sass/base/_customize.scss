@@ -8,7 +8,7 @@
 
 html {
   height: 100%;
-  font-size: $font-size;
+  font-size: 62.5%;
 }
 
 body {
@@ -33,33 +33,57 @@ button {
 
 .wrapper {
   max-width: 153rem;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .container {
-  margin: 0 2.3rem;
-  padding: 10rem 0 0;
-  text-align: center;
+  margin: 0 1rem;
+  // padding: 10rem 0 0;
+  text-align: left;
 
-  @media only screen and (min-width: 1200px) {
-    display: flex;
-    margin: 0 16rem;
-    padding: 0;
-  }
+  // @media only screen and (min-width: 1200px) {
+  //   display: flex;
+  //   margin: 0 16rem;
+  //   padding: 0;
+  // }
 }
 
-.btn {
-  max-width: 160px;
+.logo {
+  font-size: 34px;
+  font-weight: 500;
 }
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul {
-  padding-left: 24px;
+  text-align: left;
+  // padding-left: 24px;
 }
 
 li {
   margin-bottom: 8px;
+}
+
+h2,
+h3 {
+  padding-right: 6rem;
+  font-size: $font-size-large;
+  line-height: 36px;
+  text-align: left;
+}
+
+h4 {
+  color: $color-gray-dark2;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  line-height: $line-height + 6px;
+}
+
+p {
+  text-align: left;
 }

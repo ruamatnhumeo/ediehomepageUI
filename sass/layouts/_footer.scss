@@ -1,0 +1,37 @@
+.footer {
+  background-color: $bg-color-blue-dark;
+  > .container {
+    margin-left: 4.1rem;
+    padding: 3.6rem 0 4.5rem;
+  }
+
+  &__options {
+    > ul {
+      font-size: $font-size-medium;
+      > li {
+        margin-bottom: 0.6rem;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  &__icons {
+    padding-top: 6.4rem;
+  }
+  &__logo {
+    color: #ffffff;
+  }
+  &__contact-group {
+    padding-top: 6.5rem;
+    @extend %contact-group;
+    > p {
+      color: $color-gray-dark2;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 13.3rem;
+  }
+}

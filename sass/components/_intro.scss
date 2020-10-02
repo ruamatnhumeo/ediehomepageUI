@@ -1,0 +1,47 @@
+.intro {
+  padding-top: 4.8rem;
+  width: 100%;
+
+  &__heading {
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-weight: $font-weight-medium;
+
+    p {
+      font-size: $font-size-small + 2px;
+      line-height: 18px;
+      color: $color-blue;
+    }
+  }
+  &__image {
+    > img {
+      width: 34.8rem;
+      height: 14.5rem;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+  }
+  &__content {
+    padding-top: 2.2rem;
+    padding-left: 3rem;
+    text-align: left;
+
+    > h2 {
+      padding-right: 10rem;
+    }
+
+    > p {
+      padding-top: 3.3rem;
+      padding-right: 5rem;
+      font-size: $font-size-small + 2px;
+      line-height: 18px;
+      text-align: left;
+    }
+  }
+
+  &__contact-group {
+    padding-top: 3.1rem;
+    @extend %contact-group;
+  }
+}

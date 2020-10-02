@@ -1,0 +1,25 @@
+.services {
+  padding-top: 10rem;
+
+  &__body {
+    padding-top: 5.3rem;
+  }
+  &__design {
+    .serve__group {
+      padding-bottom: 4rem;
+      @include serve-group($color-blue);
+    }
+  }
+  &__front-end {
+    .serve__group {
+      padding-bottom: 4rem;
+      @include serve-group($color-green);
+    }
+  }
+  &__back-end {
+    .serve__group {
+      padding-bottom: 4rem;
+      @include serve-group($color-red);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 800;
+  background-color: $bg-color-light;
+
+  &__nav {
+    height: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__hamburger {
+    position: relative;
+    .hamburger-menu {
+      width: 1.8rem;
+      height: 1.8rem;
+      background-image: url("../images/menu-black.svg");
+    }
+    #hamburger-toggler {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+
+      &:checked ~ .aside {
+        transform: translateX(0%);
+      }
+      &:checked ~ .hamburger-menu {
+        background-image: url("../images/close.svg");
+      }
+    }
+  }
+}

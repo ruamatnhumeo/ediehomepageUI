@@ -2,5 +2,15 @@
 @import "./helpers/mixin";
 @import "./helpers/placeholder";
 
+@import "./base/reset";
+@import "./base/customize";
+
 @import "./layouts/header";
 @import "./layouts/footer";
+
+@import "./components/intro";
+@import "./components/services";
+@import "./components/design-dashboard";
+@import "./components/team";
+@import "./components/quote";
+@import "./components/aside";

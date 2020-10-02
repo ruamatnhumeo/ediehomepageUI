@@ -1,0 +1,40 @@
+.team {
+  padding-top: 10rem;
+  &__heading {
+    &__meet {
+      font-size: $font-size-medium;
+      color: $color-red;
+    }
+
+    > p {
+      padding: 1.4rem 9.2rem 3.6rem 0;
+      font-size: $font-size + 2px;
+    }
+  }
+  &__avatars {
+    &__inner {
+      position: relative;
+      width: 35rem;
+      height: 32rem;
+      .person1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include avatar(14.5rem, 14.5rem);
+      }
+      .person2 {
+        position: absolute;
+        top: 162px;
+        right: 0;
+        @include avatar(16.2rem, 16.2rem);
+      }
+      .person3 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include avatar(17.5rem, 17.5rem);
+      }
+    }
+  }
+}
