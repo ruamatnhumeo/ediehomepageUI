@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://nervous-elion-629148.netlify.app/">
+    <a href="https://nervous-elion-629148.netlify.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/QQ9Li97FTjzipCRGfEBs">
+    <a href="https://devchallenges.io/solutions/QQ9Li97FTjzipCRGfEBs" target="_blank">
       Solution
     </a>
     <span> | </span>
