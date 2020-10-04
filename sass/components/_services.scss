@@ -1,25 +1,51 @@
 .services {
   padding-top: 10rem;
 
+  &__heading {
+    max-width: 346px;
+  }
+
   &__body {
     padding-top: 5.3rem;
   }
   &__design {
-    .serve__group {
-      padding-bottom: 4rem;
+    .serve__group__inner {
       @include serve-group($color-blue);
     }
   }
   &__front-end {
-    .serve__group {
-      padding-bottom: 4rem;
+    .serve__group__inner {
       @include serve-group($color-green);
     }
   }
   &__back-end {
-    .serve__group {
-      padding-bottom: 4rem;
+    .serve__group__inner {
       @include serve-group($color-red);
+    }
+  }
+  .serve__group {
+    padding-bottom: 4rem;
+  }
+
+  @media only screen and (min-width: 765px) {
+    padding-top: 20rem;
+    &__heading {
+      > h2 {
+        font-size: $font-size-large + 12px;
+        line-height: 54px;
+      }
+    }
+
+    &__body {
+      margin-top: 0.42rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .serve__group {
+      padding-bottom: 0;
+    }
+    &__front-end {
+      margin: 0 0.4rem;
     }
   }
 }

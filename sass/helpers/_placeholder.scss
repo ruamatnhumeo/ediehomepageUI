@@ -1,29 +1,38 @@
 %contact-group {
-  > p {
+  .slogan {
     font-size: $font-size-small;
     font-weight: $font-weight-medium;
     line-height: $line-height-small;
   }
   .input-area {
-    height: 47px;
-    width: 291px;
-
+    display: inline-block;
     font-size: $font-size;
     border-radius: 12px;
     background-color: $color-gray-super-light;
     > input {
       margin: 1.5rem 3rem 0.6rem 1.9rem;
       border: none;
+      outline: none;
       background: transparent;
     }
     > button {
       margin: 0.4rem;
+      padding: 1.2rem 2.2rem;
       color: $color-gray-super-light;
-      width: 71px;
-      height: 39px;
       border: none;
       border-radius: 12px;
       background-color: $color-blue;
+    }
+  }
+  @media only screen and (min-width: 765px) {
+    .slogan {
+      font-size: $font-size;
+    }
+    .input-area {
+      > input,
+      > button {
+        font-size: 18px;
+      }
     }
   }
 }

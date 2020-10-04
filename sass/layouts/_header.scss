@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 800;
   background-color: $bg-color-light;
@@ -31,6 +31,32 @@
       &:checked ~ .hamburger-menu {
         background-image: url("../images/close.svg");
       }
+    }
+    @media only screen and (min-width: 765px) {
+      display: none;
+    }
+  }
+  &__menu {
+    display: none;
+    &__list {
+      display: flex;
+      > li {
+        margin-right: 5rem;
+        > a {
+          font-size: $font-size-large;
+          font-weight: $font-weight-medium;
+          color: $color-gray-dark;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 765px) {
+    &__nav {
+      height: 9.5rem;
+    }
+    &__menu {
+      display: block;
     }
   }
 }
